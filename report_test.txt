@@ -1,0 +1,5 @@
+Metrics for Test Data:
+Precision: 0.7998558167107518
+Recall: 0.7175014068655037
+F1-score: 0.625741737226976
+Support: 1777.0

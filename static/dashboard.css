@@ -1,0 +1,10 @@
+.trees {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minmax value as needed */
+    grid-gap: 10px; /* Adjust the gap between images */
+}
+
+.trees img {
+    max-width: 100%;
+    height: auto;
+}

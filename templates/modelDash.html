@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}Home{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dashboard.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="main">
+    <div class="con_decision-tree">
+        <h1 style="display: flex; align-items: center; justify-content: center; margin-bottom: 1em">1) The Decision tree of the model will be generated as: </h1>
+        <div class="trees">
+            <img src="{{ url_for('static', filename='Images/tree_0.png') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/tree_1.png') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/tree_2.png') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/tree_3.png') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/tree_4.png') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/tree_5.png') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/tree_6.png') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/tree_7.png') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/tree_8.png') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/tree_9.png') }}" alt="">
+        </div>
+        <div class="accuracy" >
+            <h2 style="display: flex; justify-content: center; align-items: center; margin: 2em 0">2) The accruacy and confusion matrix for test and train data is generated as: </h2>
+            <div class="accracy_test" style="display: flex; justify-content: center; align-items: center; margin: 2em 0;">
+                <img src="{{ url_for('static', filename='Images/confusion_matrix.png') }}" alt="">
+            </div>
+            <div class="accracy_train">
+                <h2>The precision, recall, support and F1-score of the model are: </h2>
+                <div class="accuracy_train">
+                    <h3>Report for Test Data:</h3>
+                    <p>{{ content_test }}</p>
+    
+                    <h3>Report for Train Data:</h3>
+                    <p>{{ content_train }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

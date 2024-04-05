@@ -1,0 +1,5 @@
+Metrics for Training Data:
+Precision: 0.8165738849095462
+Recall: 0.749718574108818
+F1-score: 0.6857896131761841
+Support: 2665.0
